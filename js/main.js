@@ -6,6 +6,9 @@
             
             event.preventDefault();
             
+            $("nav ul li.active").toggleClass("active");
+            $(this).parent().toggleClass("active");            
+            
             $(".content.active").toggle().toggleClass("active");
             $($(this).attr("href")).toggle().toggleClass("active");
             
